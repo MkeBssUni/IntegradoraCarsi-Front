@@ -13,10 +13,10 @@ const obtenerProveedores = (data) => {
     contenido.innerHTML = `
             ${contenido.innerHTML}
             <tr>
-            <td>${provider.fullname}</td>
-                <td>${provider.address}</td>
-                <td>${provider.phone_number}</td>
-                <td>${provider.provides}</td>
+            <td>${provider.nombreEmpresa}</td>
+                <td>${provider.direccion}</td>
+                <td>${provider.telefono}</td>
+                <td>${provider.articulo}</td>
                 <td>
                     <a href="update.html?id=${provider.id_provider}">
                     <button class="btn btn-outline-warning" title="Editar" >

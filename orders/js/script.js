@@ -17,8 +17,8 @@ const obtenerOrdenes = (data) => {
     ${contenido.innerHTML}
       <tr>
         <input type="hidden" value="${order.id}">
-        <td>${order.description}</td>
-        <td>${order.date_order}</td>
+        <td>${order.descripcion}</td>
+        <td>${order.fecha}</td>
         <td>${order.total}</td>
         <td>${order.cliente}</td>
         <td>${order.empleado}</td>

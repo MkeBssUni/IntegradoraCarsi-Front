@@ -13,8 +13,8 @@ const obtenerClientes = (data) => {
     contenido.innerHTML = `
             ${contenido.innerHTML}
             <tr>
-            <td>${client.fullname}</td>
-            <td>${client.email}</td>
+            <td>${client.nombre}</td>
+            <td>${client.correoElectronico}</td>
             <td>${client.visits}</td>
             <td>
                 <a href="update.html?id=${client.id_client}">
