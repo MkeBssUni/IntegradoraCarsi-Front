@@ -13,10 +13,10 @@ const obtenerProductos = (data) => {
     contenido.innerHTML = `
             ${contenido.innerHTML}
               <tr>
-                <td>${producto.title}</td>
-                <td>${producto.description}</td> 
-                <td>${producto.stock}</td>
-                <td>$${producto.price}</td>
+                <td>${producto.nombreProducto}</td>
+                <td>${producto.descripcion}</td> 
+                <td>${producto.cantidad}</td>
+                <td>$${producto.precio}</td>
                 <td style="display:none">${producto.id}</td>
                 <td>
                     <a href="update.html?id=${producto.id_product}">

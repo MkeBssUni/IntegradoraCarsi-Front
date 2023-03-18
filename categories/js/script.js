@@ -13,7 +13,7 @@ const obtenerProveedores = (data) => {
     contenido.innerHTML = `
             ${contenido.innerHTML}
             <tr>
-            <td>${category.title}</td>
+            <td>${category.nombreCategoria}</td>
             <td></td>
             <td></td>
             <td>

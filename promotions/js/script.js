@@ -15,10 +15,10 @@ const obtenerPromotions = (data) => {
             ${contenido.innerHTML}
             <tr>
             <input type="hidden" value="${promotion.id_promotion}">
-                <td>${promotion.title}</td>
-                <td>${promotion.description}</td>
-                <td id="start_date" name="start_date">${promotion.start_date}</td>
-                <td id="end_date" name="end_date" onloadeddata="limitarCaracteres()">${promotion.end_date}</td>
+                <td>${promotion.nombrePromocion}</td>
+                <td>${promotion.descripcion}</td>
+                <td id="start_date" name="start_date">${promotion.fechaInicio}</td>
+                <td id="end_date" name="end_date" onloadeddata="limitarCaracteres()">${promotion.fechaFin}</td>
                 <td>
                     <a href="update.html?id=${promotion.id_promotion}">
                     <button class="btn btn-outline-warning" title="Editar">
