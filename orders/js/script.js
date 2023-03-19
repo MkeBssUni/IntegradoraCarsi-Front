@@ -1,4 +1,4 @@
-fetch("http://localhost:3000/api/orders")
+fetch("http://18.233.124.229:3000/api/orders")
   .then((response) => response.json())
   .then((data) => {
     console.log(data);
@@ -8,7 +8,10 @@ fetch("http://localhost:3000/api/orders")
     console.log(error);
   }
 );
-  
+  const splitFecha=(fecha)=>{
+    const fechaArray = fecha.split("T");
+    return fechaArray[0];
+  }
 const obtenerOrdenes = (data) => {
   const contenido = document.getElementById("ordenes");
   data.forEach((order) => {
@@ -18,7 +21,7 @@ const obtenerOrdenes = (data) => {
       <tr>
         <input type="hidden" value="${order.id}">
         <td>${order.descripcion}</td>
-        <td>${order.fecha}</td>
+        <td>${splitFecha(order.fecha)}</td>
         <td>${order.total}</td>
         <td>${order.cliente}</td>
         <td>${order.empleado}</td>

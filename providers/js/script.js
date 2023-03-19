@@ -1,4 +1,4 @@
-fetch("http://localhost:3000/api/providers")
+fetch("http://18.233.124.229:3000/api/providers")
   .then((response) => response.json())
   .then((data) => {
     console.log(data);

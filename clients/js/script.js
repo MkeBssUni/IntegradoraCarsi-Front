@@ -1,4 +1,4 @@
-fetch("http://localhost:3000/api/clients")
+fetch("http://18.233.124.229:3000/api/client")
   .then((response) => response.json())
   .then((data) => {
     console.log(data);
@@ -15,7 +15,6 @@ const obtenerClientes = (data) => {
             <tr>
             <td>${client.nombre}</td>
             <td>${client.correoElectronico}</td>
-            <td>${client.visits}</td>
             <td>
                 <a href="update.html?id=${client.id_client}">
                 <button class="btn btn-outline-warning" title="Editar">

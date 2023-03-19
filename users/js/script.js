@@ -1,4 +1,4 @@
-fetch("http://localhost:3000/api/users")
+fetch("http://18.233.124.229:3000/api/users")
   .then((response) => response.json())
   .then((data) => {
     console.log(data);
@@ -17,7 +17,6 @@ const obtenerUsers = (data) => {
             <input type="hidden" value="${user._id}">
                 <td>${user.nombreUsuario}</td>
                 <td>${user.role}</td>
-                <td>${user.__v}</td>
                 <td>${user.correoElectronico}</td>
                 <td>${user.telefono}</td>
                 <td>

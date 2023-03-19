@@ -1,4 +1,4 @@
-fetch("http://localhost:3000/api/promotions")
+fetch("http://18.233.124.229:3000/api/promotions")
   .then((response) => response.json())
   .then((data) => {
     console.log(data);
@@ -17,8 +17,6 @@ const obtenerPromotions = (data) => {
             <input type="hidden" value="${promotion.id_promotion}">
                 <td>${promotion.nombrePromocion}</td>
                 <td>${promotion.descripcion}</td>
-                <td id="start_date" name="start_date">${promotion.fechaInicio}</td>
-                <td id="end_date" name="end_date" onloadeddata="limitarCaracteres()">${promotion.fechaFin}</td>
                 <td>
                     <a href="update.html?id=${promotion.id_promotion}">
                     <button class="btn btn-outline-warning" title="Editar">

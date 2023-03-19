@@ -1,4 +1,4 @@
-fetch("http://localhost:3000/api/categories")
+fetch("http://18.233.124.229:3000/api/category")
   .then((response) => response.json())
   .then((data) => {
     console.log(data);
